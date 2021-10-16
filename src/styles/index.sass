@@ -1,2 +1,1305 @@
 body
-    background: #333
+  padding: 0px
+  margin: 0px
+  overflow-x: hidden
+  background: #400615
+
+a
+  text-decoration: none
+
+.title
+  width: 90vw
+  margin: 80px 5vw
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: 500
+  font-size: 43px
+  line-height: 113.5%
+
+  /* or 54px
+
+  letter-spacing: 0.065em
+  color: #FFFFFF
+
+  span
+    margin-top: 30px
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: 400
+    font-size: 18px
+    line-height: 24px
+
+    /* identical to box height
+
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+.standart-button
+  transition: .3s
+  width: 267px
+  height: 60px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+  letter-spacing: 0.065em
+  color: #333333
+  background: #F2B872
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.4)
+
+  &:hover
+    transform: translateY(-6px)
+
+.light-brown
+  background: #A65F37
+
+.light-red
+  background: #730A1D
+
+.dark-brown
+  background: #733119
+
+.header-wrapper
+  width: 100vw
+  height: 100px
+  background: #730A1D
+  display: flex
+  align-items: center
+  justify-content: space-between
+  box-sizing: border-box
+  padding: 0 100px
+
+.header-wrapper__menu-and-language
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.menu-burger
+  cursor: pointer
+  margin-right: 35px
+
+.language
+  cursor: pointer
+  transition: .3s
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+  span
+    transition: .3s
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 500
+    font-size: 12px
+    line-height: 14px
+    color: #FFFFFF
+
+  img
+    transition: .3s
+    margin-right: 7px
+
+.choose-lan-wrapper
+  transition: .3s
+  display: none
+  margin-left: -10px
+  margin-top: 13px
+  position: absolute
+  width: 100px
+  height: 65px
+  background: #400615
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.5)
+  border-radius: 4px
+  flex-direction: column
+  box-sizing: border-box
+  padding: 10px
+
+  .language
+    transition: .3s
+    display: flex
+    align-items: center
+    justify-content: flex-start
+    height: 17px
+    margin-bottom: 10px
+
+    span
+      transition: .3s
+      margin-top: -4px
+
+    img
+      transition: .3s
+      margin-top: 0px
+
+    a
+      transition: .3s
+      text-decoration: none
+
+.language:hover .choose-lan-wrapper
+  transition: .3s
+  display: flex
+
+.header-wrapper__logo
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: center
+
+  span
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: normal
+    font-size: 36px
+    line-height: 48px
+    color: #FFFFFF
+
+  img
+    margin: 0 30px
+
+.header-wrapper__social-networks
+  flex: 1
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.networks
+  width: 100px
+  display: flex
+  justify-content: space-between
+
+/*Главный экран
+
+.wrapper
+  width: 98vw
+  margin: 0 1vw
+
+.big-screen-wrapper
+  margin-top: 1vw
+  width: 98vw
+  height: 84.5vh
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+
+.big-screen-wrapper__half
+  width: 48.5vw
+  height: 84.5vh
+  background: none
+
+.big-screen-wrapper__half__big-wrapper
+  background: #111
+  width: 100%
+  height: 100%
+  position: relative
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25)
+
+.big-screen-wrapper__half__big-wrapper__image
+  width: 100%
+  height: 100%
+  position: absolute
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  opacity: 0.6
+
+  img
+    width: 110%
+
+.big-screen-wrapper__half__big-wrapper__content
+  width: 100%
+  height: 100%
+  position: absolute
+  box-sizing: border-box
+  padding: 40px
+  overflow: hidden
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-direction: column
+
+  h1
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    font-size: 54px
+    margin-bottom: 30px
+    line-height: 113.5%
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+  p
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    padding-bottom: 30px
+    width: 60%
+    font-size: 18px
+    line-height: 24px
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+.big-screen-wrapper__half__mini-wrapper
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+  /*margin-top: -2.6vh;
+  width: 48.5vw
+  height: 41.5vh
+
+  /*background: #444;
+
+.big-screen-wrapper__half__mini-wrapper__dog-box
+  width: 23.8vw
+  height: 100%
+  background: #111
+  position: relative
+
+  &:hover .big-screen-wrapper__half__mini-wrapper__dog-box__image img
+    opacity: 0.2
+
+.big-screen-wrapper__half__mini-wrapper__dog-box__image
+  width: 23.8vw
+  height: 100%
+  position: absolute
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+    opacity: .6
+    transition: .4s
+    width: 23.8vw
+
+.big-screen-wrapper__half__mini-wrapper__dog-box__content
+  box-sizing: border-box
+  padding: 30px
+  width: 23.8vw
+  height: 100%
+  display: flex
+  position: absolute
+  flex-direction: column
+  align-items: flex-start
+  justify-content: flex-end
+
+.dog-box__shadow
+  box-shadow: 0px 30px 60px rgba(0, 0, 0, 0.25)
+
+.big-screen-wrapper__half__mini-wrapper__dog-box__content
+  h1
+    width: 90%
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    font-size: 24px
+    margin-bottom: 20px
+    line-height: 112.8%
+
+    /* identical to box height, or 27px
+
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+  p
+    width: 90%
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 113.5%
+
+    /* or 18px
+
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+.big-screen-wrapper__half__mini-wrapper iframe
+  width: 48.5vw
+  height: 41.5vh
+
+.mini-wrapper-margin
+  margin-top: 1.5vh
+
+.about-owner__wrapper
+  height: 60vw
+  margin-top: 10vh
+  width: 100vw
+  display: flex
+  align-items: center
+
+  /*justify-content: space-between;
+  position: relative
+
+.about-owner__wrapper__content-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-direction: column
+  box-sizing: border-box
+  padding: 40px 80px 90px 120px
+  position: absolute
+  margin-left: 45vw
+  width: 55vw
+  min-height: 50vw
+  background: #730A1D
+  filter: drop-shadow(20px 30px 80px rgba(0, 0, 0, 0.25))
+
+  h1
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    font-size: 64px
+    margin-bottom: 35px
+    line-height: 85px
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+  h2
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 18px
+    line-height: 22px
+
+    /* identical to box height
+
+    letter-spacing: 0.065em
+    color: #F2B872
+
+  p
+    padding: 30px 0 30px 0
+    font-family: Montserrat
+    font-style: normal
+    font-weight: normal
+    font-size: 16px
+    line-height: 20px
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+.about-owner__wrapper__photo-box
+  position: absolute
+  width: 50vw
+  height: 40vw
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  filter: drop-shadow(20px 30px 80px rgba(0, 0, 0, 0.5))
+
+  img
+    width: 50vw
+
+.about-dogs__wrapper
+  margin: 0 auto
+  margin-top: 15vh
+  height: 60vw
+  width: 85vw
+  display: flex
+  align-items: center
+
+  /*justify-content: space-between;
+  position: relative
+
+.about-dogs__wrapper__content-box
+  display: flex
+  align-items: flex-start
+  justify-content: center
+  flex-direction: column
+  box-sizing: border-box
+
+  /*padding: 40px 80px 90px 120px;
+  position: absolute
+  margin-left: 30vw
+  width: 60vw
+  filter: drop-shadow(20px 30px 80px rgba(0, 0, 0, 0.5))
+
+  p
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    font-size: 32px
+    line-height: 44px
+    letter-spacing: 0.065em
+    color: #FFFFFF
+    text-shadow: 0px 4px 20px rgba(0, 0, 0, 0.5)
+
+.about-dogs__wrapper__photo-box
+  position: absolute
+  width: 45vw
+  height: 35vw
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  filter: drop-shadow(20px 30px 80px rgba(0, 0, 0, 0.5))
+
+  img
+    width: 50vw
+
+.preferences-wrapper
+  margin-top: 20vh
+  width: 100vw
+  height: 60vh
+  box-sizing: border-box
+  padding: 0 100px
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.preferences-wrapper__box
+  width: 26vw
+  min-height: -10vh
+  padding: 40px
+  box-sizing: border-box
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-direction: column
+  box-shadow: 0px 30px 80px rgba(0, 0, 0, 0.5)
+
+.preferences-wrapper__box-image
+  margin: 30px
+  display: flex
+  align-items: center
+  justify-content: center
+
+  img
+
+.preferences-wrapper__box
+  h2
+    text-align: center
+    margin-top: 30px
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    font-size: 30px
+    line-height: 36px
+    margin-bottom: 30px
+
+    /* identical to box height
+    color: #FFFFFF
+    text-shadow: 0px 25px 40px rgba(0, 0, 0, 0.1)
+
+  p
+    /*width: 80%;
+    padding-top: 0px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 16px
+    line-height: 22px
+    text-align: center
+    margin-bottom: 20px
+    color: #FFFFFF
+    text-shadow: 0px 25px 40px rgba(0, 0, 0, 0.1)
+
+.preference-center__margin
+  margin-top: -170px
+
+.review_wrapper
+  margin-top: 30vh
+  width: 100vw
+  box-sizing: border-box
+  padding: 0 3.5vw
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.review_wrapper__box
+  width: 30vw
+  min-height: 10vh
+  background: #730A1D
+  box-shadow: 0px 20px 50px rgba(0, 0, 0, 0.3)
+
+.review_wrapper__box__reviewer
+  margin-top: 30px
+  width: 100%
+  height: 70px
+  display: flex
+
+.review_wrapper__box__reviewer-color
+  width: 7px
+  height: 100%
+  background: #F2B872
+
+.review_wrapper__box__reviewer-photo
+  margin: 0 20px
+  width: 70px
+  height: 70px
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+  border-radius: 50%
+
+  img
+    width: 75px
+
+.review_wrapper__box__reviewer-name
+  display: flex
+  justify-content: center
+  flex-direction: column
+
+  h2
+    margin: 0px
+    margin-bottom: 5px
+    font-family: Lora
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    line-height: 26px
+    color: #FFFFFF
+
+  span
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 500
+    font-size: 14px
+    line-height: 17px
+    color: #AAAAAA
+
+.review_wrapper__box p
+  margin: 30px
+  font-family: Lora
+  font-style: normal
+  font-weight: 500
+  font-size: 17px
+  line-height: 21px
+  color: #FFFFFF
+
+.more-reviews-button
+  margin-top: 40px
+  width: 100vw
+  display: flex
+  align-items: center
+  justify-content: center
+  height: 60px
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: bold
+  font-size: 16px
+  line-height: 21px
+  color: #FFFFFF
+
+  img
+    margin-left: 7px
+    margin-top: 2px
+
+.footter-wrapper
+  color: #fff
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 300
+  font-size: 16px
+  margin-top: 5vh
+  width: 100vw
+  height: 120px
+  box-sizing: border-box
+  padding: 0 5vw
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.footter-wrapper__content-box
+  flex: 2
+  display: flex
+  align-items: center
+
+  a
+    color: #fff
+    text-decoration: none
+
+.flex-center
+  flex: 3
+  justify-content: center
+
+.flex-start
+  justify-content: flex-start
+
+.flex-end
+  justify-content: flex-end
+
+.flex-between
+  justify-content: space-between
+
+.copyright-box
+  width: 100vw
+  height: 100px
+  display: flex
+  align-items: center
+  justify-content: center
+
+.vertical-line
+  /*flex: 1;
+  width: 1px
+  height: 20px
+  background: #fff
+  margin: 0 30px
+
+.copyright-box__content
+  flex: 1
+  display: flex
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 300
+  font-size: 14px
+  line-height: 17px
+
+  /* identical to box height
+
+  color: #FFFFFF
+
+  span
+    padding-left: 20px
+
+.developed-by
+  /*margin-bottom: 100px;
+  width: 100%
+  height: 50px
+  display: flex
+  align-items: center
+  justify-content: center
+  font-family: 'Montserrat', sans-serif
+  font-size: 14px
+  color: #fff
+  background: none
+
+  span
+    padding-left: 7px
+
+    a
+      text-decoration: none
+      font-size: 16px
+      font-weight: 600
+      color: #f1f1f1
+
+/*DOG CARD
+
+.dogs-wrapper
+  width: 90vw
+  margin: 0 5vw
+  display: flex
+  justify-content: center
+  align-items: center
+  flex-direction: column
+
+.dogs-wrapper__dog-card
+  display: flex
+  width: 1100px
+  min-height: 200px
+  background: #F2B872
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.15)
+
+.dogs-wrapper__dog-card__image-box
+  min-height: 600px
+  width: 40%
+  position: relative
+  overflow: hidden
+
+  img
+    width: 100%
+    position: absolute
+
+.button-bottom
+  transition: 0.3s
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+
+  /* identical to box height
+
+  letter-spacing: 0.065em
+  color: #FFFFFF
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 70px
+  background: #730A1D
+  position: absolute
+  bottom: 0
+  left: 0
+
+  &:hover
+    background: #111
+
+  img
+    margin-left: 140px
+    width: 18px
+
+.dog-card-bottom
+  margin-bottom: 130px
+
+.dogs-wrapper__dog-card__image-content
+  box-sizing: border-box
+  padding: 30px
+
+  h1
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: 900
+    font-size: 24px
+    line-height: 32px
+
+    /* identical to box height
+
+    letter-spacing: 0.065em
+    color: #000000
+    margin-bottom: 20px
+
+.some-info-box
+  width: 100%
+  display: flex
+  margin-bottom: 30px
+
+.mini-info
+  margin-right: 20px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 300
+  font-size: 15px
+  line-height: 18px
+  color: #222222
+
+.win-list
+  margin-top: 30px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 15px
+  line-height: 20px
+  color: #400615
+
+.mini-info span
+  padding-left: 7px
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 24px
+
+  /* identical to box height
+
+  color: #222222
+
+.dogs-wrapper__dog-card__look-button
+  transition: .3s
+  width: 217px
+  height: 51px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #730A1D
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15)
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+
+  /* identical to box height
+
+  letter-spacing: 0.065em
+  color: #FFFFFF
+
+  &:hover
+    transform: translateY(-5px)
+    background: #730A1D
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3)
+
+.review-page__review_wrapper
+  width: 100vw
+  box-sizing: border-box
+  padding: 0 3.5vw
+  display: flex
+  flex-wrap: wrap
+  align-items: center
+  justify-content: space-between
+
+.review-margin
+  margin-bottom: 1.5vw
+
+.offspring-wrapper
+  width: 1200px
+  margin: 0 auto
+
+.parents-wrapper
+  margin: 0 auto
+  width: 1100px
+  display: flex
+  justify-content: space-between
+
+.parent-wrapper__box
+  width: 500px
+  height: 800px
+  position: relative
+
+.parent-wrapper__box__back-card
+  margin-top: 50px
+  margin-left: 50px
+  width: 450px
+  height: 600px
+  position: absolute
+  background: #777
+
+.parent-wrapper__box__photo
+  transition: .3s
+  width: 450px
+  height: 600px
+  background: #333
+  position: absolute
+  box-shadow: 40px 40px 80px rgba(0, 0, 0, 0.7)
+
+.parent-wrapper__box__photo__img
+  width: 100%
+  height: 100%
+  overflow: hidden
+  width: 450px
+  height: 600px
+  position: relative
+
+  img
+    width: 450px
+    position: absolute
+
+.parents-wrapper__box__photo__opacity
+  transition: .3s
+  width: 450px
+  height: 600px
+  position: absolute
+  background: linear-gradient(180.1deg, rgba(0, 0, 0, 0) 50.09%, #1D1C1C 99.94%)
+
+.parents-wrapper__box__photo__content
+  width: 450px
+  height: 600px
+  position: absolute
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: 900
+  font-size: 24px
+  line-height: 32px
+  letter-spacing: 0.065em
+  color: #FFFFFF
+  display: flex
+  align-items: flex-end
+  box-sizing: border-box
+  padding: 40px
+
+.parent-wrapper__box__photo:hover
+  .parents-wrapper__box__photo__opacity
+    transition: .3s
+    width: 450px
+    height: 600px
+    position: absolute
+    background: linear-gradient(180.1deg, rgba(0, 0, 0, 0.63) 50.09%, #1D1C1C 99.94%)
+
+  transition: .3s
+  transform: translateY(-10px)
+
+/*--------------------------------
+
+.offspring-wrapper__elements
+  margin: 0 auto
+  width: 1150px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  flex-wrap: wrap
+
+.offspring-mini-card-bottom
+  margin-bottom: -20px
+
+.offspring-mini-wrapper__dog-card
+  display: flex
+  width: 550px
+  min-height: 200px
+  background: #F2B872
+  box-shadow: 0px 30px 40px rgba(0, 0, 0, 0.15)
+
+.offspring-mini-wrapper__dog-card__image-box
+  min-height: 350px
+  width: 45%
+  position: relative
+  display: flex
+  align-items: center
+  justify-content: center
+  overflow: hidden
+
+  img
+    height: 100%
+    position: absolute
+
+.offspring-mini__button-bottom
+  transition: 0.3s
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+
+  /* identical to box height
+
+  letter-spacing: 0.065em
+  color: #FFFFFF
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 100%
+  height: 70px
+  background: #730A1D
+  position: absolute
+  bottom: 0
+  left: 0
+
+  &:hover
+    background: #111
+
+  img
+    margin-left: 140px
+    width: 18px
+
+.offspring-mini-card-bottom
+  margin-bottom: 90px
+
+.offspring-mini-wrapper__dog-card__image-content
+  width: 55%
+  box-sizing: border-box
+  padding: 30px
+
+  h1
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: 900
+    font-size: 20px
+    line-height: 24px
+
+    /* identical to box height
+
+    letter-spacing: 0.065em
+    color: #000000
+    margin-bottom: 20px
+
+.offspring-mini .some-info-box-offspring
+  width: 50%
+  display: flex
+  flex-wrap: wrap
+  flex-direction: column
+  margin-bottom: 30px
+
+.mini-info
+  margin-top: 10px
+
+  /*margin-right: 20px;
+  font-family: Montserrat
+  font-style: normal
+  font-weight: 300
+  font-size: 15px
+  line-height: 18px
+
+  /*display: flex;
+  /*flex-direction: column;
+  color: #222222
+
+.win-list
+  margin-top: 30px
+  font-family: Montserrat
+  font-style: normal
+  font-weight: normal
+  font-size: 15px
+  line-height: 20px
+  color: #400615
+
+.mini-info span
+  margin-top: 3px
+  padding-left: 0px
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: bold
+  font-size: 18px
+  line-height: 24px
+
+  /* identical to box height
+
+  color: #222222
+
+.offspring-mini-wrapper__dog-card__look-button
+  transition: .3s
+  margin-top: 30px
+  width: 217px
+  height: 51px
+  display: flex
+  align-items: center
+  justify-content: center
+  background: #733119
+  box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.15)
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: normal
+  font-size: 18px
+  line-height: 24px
+
+  /* identical to box height
+
+  letter-spacing: 0.065em
+  color: #FFFFFF
+
+  &:hover
+    transform: translateY(-5px)
+    background: #733111
+    box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.3)
+
+#menu-all
+  z-index: 100
+  position: fixed
+  transition: 0.4s
+  width: 100vw
+  height: 100vh
+  background: #400615
+  display: none
+
+#close-menu-button
+  position: absolute
+  right: 0
+  top: 0
+  cursor: pointer
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 128px
+  height: 128px
+  background: #F2B872
+  box-shadow: -10px 10px 25px rgba(0, 0, 0, 0.25)
+
+.menu-all__wrapper
+  box-sizing: border-box
+  padding: 50px
+  width: 100vw
+  height: 100vh
+  display: flex
+  align-items: center
+  justify-content: space-between
+
+.menu-all__wrapper__menu-all__list-wrapper
+
+.menu-list__element
+  cursor: pointer
+  transition: .3s
+  margin: 20px 0
+  display: flex
+  align-items: center
+  justify-content: flex-start
+
+.menu-list__word
+  margin-top: 10px
+  font-family: Playfair Display
+  font-style: normal
+  font-weight: normal
+  font-size: 64px
+  line-height: 85px
+  color: #FFFFFF
+
+.gorizontal-line
+  z-index: 101
+  width: 100px
+  height: 2px
+  color: #fff
+
+.menu-list__element:hover
+  transform: translateX(40px)
+  color: #F2B872
+
+  .menu-list__word, .gorizontal-line
+    color: #F2B872
+
+.menu-list__word
+  margin-left: 30px
+
+.right-side__photo
+  box-sizing: border-box
+  padding-top: 10%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  width: 50%
+
+#contacts-popup
+  top: 0
+  left: 0
+  z-index: 150
+  width: 100vw
+  height: 100vh
+  background: linear-gradient(180.1deg, rgba(0, 0, 0, 0.63) 50.09%, #1D1C1C 99.94%)
+  position: fixed
+  display: none
+  align-items: center
+  justify-content: center
+
+.contacts-popup-wrapper
+  width: 90vw
+  height: 90vh
+  display: flex
+  background: #730A1D
+  box-shadow: 0px 0px 100px rgba(0, 0, 0, 0.25)
+
+  #close-menu-button
+    z-index: 160
+
+.left-contacts-box
+  width: 45%
+  height: 100%
+
+  h1
+    margin-top: 50px
+    margin-left: 50px
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: 400
+    font-size: 43px
+    line-height: 45px
+    color: #FFFFFF
+
+  h2
+    margin-top: 40px
+    margin-left: 50px
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: 400
+    font-size: 40px
+    line-height: 42px
+    color: #FFFFFF
+
+  p
+    margin-top: 40px
+    margin-left: 50px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 300
+    font-size: 18px
+    line-height: 113.5%
+
+    /* or 20px
+
+    letter-spacing: 0.065em
+    color: #FFFFFF
+
+.contacts-networks
+  margin-top: 50px
+
+  div
+    cursor: pointer
+    transition: .3s
+    width: 70%
+    padding: 20px 50px
+
+    /*box-sizing: border-box;
+    background: none
+    color: #fff
+
+    &:hover
+      width: 70%
+      padding: 20px 70px
+
+      /*box-sizing: border-box;
+      background: #F2B872
+      color: #400615
+
+.left-contacts-box__line-contacts
+  margin-top: 30px
+  display: flex
+  padding-left: 50px
+
+  div
+    display: flex
+    align-items: center
+    margin-right: 20px
+    font-family: Montserrat
+    font-style: normal
+    font-weight: 400
+    font-size: 15px
+    color: #FFFFFF
+
+    img
+      margin-right: 8px
+      width: 18px
+
+.right-contacts-box
+  padding-right: 5vh
+  width: 55%
+  height: 100%
+  display: flex
+  align-items: center
+  justify-content: flex-end
+
+.form-back__wrapper
+  padding-left: 40px
+  box-sizing: border-box
+  width: 90%
+  height: 80vh
+  background: #F2B872
+
+  h1
+    width: 70%
+    margin-top: 40px
+    font-family: Playfair Display
+    font-style: normal
+    font-weight: bold
+    font-size: 20px
+    color: #400615
+
+  form
+    margin-top: 60px
+
+    p
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+      line-height: 113.5%
+
+      /* or 20px
+
+      color: #000000
+
+    .input
+      margin-top: 15px
+      width: 346px
+      height: 56px
+      border: 2px solid #400615
+      box-sizing: border-box
+      background: #F2B872
+      padding-left: 30px
+      margin-bottom: 20px
+      font-family: Montserrat
+      font-style: normal
+      font-weight: 400
+      font-size: 18px
+
+    .button
+      cursor: pointer
+      transition: .3s
+      margin-top: 15px
+      width: 346px
+      height: 56px
+      border: 2px solid #400615
+      box-sizing: border-box
+      background: #400615
+      font-family: Playfair Display
+      font-style: normal
+      font-weight: 400
+      box-shadow: 0px 20px 30px rgba(0, 0, 0, 0.25)
+      color: #fff
+
+      &:hover
+        transform: translateY(-6px)
