@@ -247,6 +247,7 @@ a
     color: #FFFFFF
 
 .big-screen-wrapper__half__mini-wrapper
+  cursor: pointer
   display: flex
   align-items: center
   justify-content: space-between
@@ -706,7 +707,7 @@ a
   overflow: hidden
 
   img
-    width: 100%
+    height: 110%
     position: absolute
 
 .button-bottom
@@ -1303,3 +1304,43 @@ a
 
       &:hover
         transform: translateY(-6px)
+
+
+.choose-type-wrapper 
+  width: 100vw
+  height: 100vw
+  position: fixed
+  top: 0
+  left: 0
+  z-index: 999
+  background: #333
+  display: flex
+
+.choose-type-element 
+  width: 50vw
+  height: 100vw
+  position: relative
+
+.choose-type-image 
+  width: 50vw
+  height: 100vw
+  position: absolute
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+
+.choose-type-image
+  img
+  width: 55vw
+
+.choose-type-text 
+  width: 50vw
+  height: 100vw
+  position: absolute
+  overflow: hidden
+  display: flex
+  align-items: center
+  justify-content: center
+  box-sizing: border-box
+  padding: 30px
